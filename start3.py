@@ -29,7 +29,7 @@ d = input(
 ** (potęga)
 '''         )
 x = int(input ('Podaj pierwszą liczbę: '))
-y = int(input('Podaj drugą liczbę (w przypadku potęgowania - podaj potęgę: '))
+y = int(input('Podaj drugą liczbę (w przypadku potęgowania - podaj potęgę): '))
 
 print(f'Wybrane przez Ciebie liczby: {x,y}' )
 print('Wybrane działanie: ', d)
