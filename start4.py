@@ -25,3 +25,4 @@ if __name__ == "__main__":  # zeby uruchomic tylko to, co jest w mainie a nie ws
     pojazd2.hamuj()
 
     print(pojazd3.sygnal)
+    input('Wcisnij ENTER aby zakonczyc...')

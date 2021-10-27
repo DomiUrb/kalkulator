@@ -1,4 +1,4 @@
-# krotki - listy niemutowalne (niezmienialne)
+# krotki - listy niemutowalne (niezmienialne), ale okazuje sie, ze chyba jednak edytowalne
 menu = ('hamburger', 'hotdog', 'pizza')
 print(menu)
 zamowienie = menu[2:]
