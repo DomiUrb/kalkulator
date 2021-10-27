@@ -20,28 +20,49 @@ if __name__ == "__main__": # zeby uruchomic tylko to, co jest w mainie a nie wsz
     #baner = pyfiglet.Figlet(font = 'larry3d')
     #print(baner.renderText("W i t a j"), 'red')
 
-d = input(
+while True:
+    d = input(
 '''Wybierz działanie z poniższej listy:
-+
--
-*
-/
-** (potęga)
-'''         )
-x = int(input ('Podaj pierwszą liczbę: '))
-y = int(input('Podaj drugą liczbę (w przypadku potęgowania - podaj potęgę): '))
+    "+", "-", "*", "/", "**" (potęga)
+Aby zakończyć - wpisz stop
+''' )
+    #x = int(input ('Podaj pierwszą liczbę: '))
+    #y = int(input('Podaj drugą liczbę (w przypadku potęgowania - podaj potęgę): '))
 
-print(f'Wybrane przez Ciebie liczby: {x,y}' )
-print('Wybrane działanie: ', d)
+    #print(f'Wybrane przez Ciebie liczby: {x,y}' )
+    #print('Wybrane działanie: ', d)
 
-if d == '+':
-    kalkulator.dod(x,y)
-elif d == '-':
-    kalkulator.odejm(x,y)
-elif d == '*':
-    kalkulator.mnoz(x,y)
-elif d == '/':
-    kalkulator.dziel(x,y)
-elif d == '**':
-    kalkulator.potega(x,y)
+    if d == '+':
+        print('Wybrano dodawanie')
+        x = int(input ('Podaj pierwszą liczbę: '))
+        y = int(input('Podaj drugą liczbę: '))
+        print(f'Wybrane przez Ciebie liczby: {x,y}')
+        kalkulator.dod(x,y)
+    elif d == '-':
+        print('Wybrano odejmowanie')
+        x = int(input ('Podaj pierwszą liczbę: '))
+        y = int(input('Podaj drugą liczbę: '))
+        print(f'Wybrane przez Ciebie liczby: {x,y}' )
+        kalkulator.odejm(x,y)
+    elif d == '*':
+        print('Wybrano mnożenie')
+        x = int(input('Podaj pierwszą liczbę: '))
+        y = int(input('Podaj drugą liczbę: '))
+        print(f'Wybrane przez Ciebie liczby: {x, y}')
+        kalkulator.mnoz(x,y)
+    elif d == '/':
+        print('Wybrano dzielenie')
+        x = int(input('Podaj pierwszą liczbę: '))
+        y = int(input('Podaj drugą liczbę: '))
+        print(f'Wybrane przez Ciebie liczby: {x, y}')
+        kalkulator.dziel(x,y)
+    elif d == '**':
+        print('Wybrano potęgowanie')
+        x = int(input('Podaj podstawę: '))
+        y = int(input('Podaj wykładnik: '))
+        print(f'Wybrane przez Ciebie liczby: {x, y}')
+        kalkulator.potega(x,y)
+    elif d == 'stop':
+        print('Koniec programu')
+        break
 
