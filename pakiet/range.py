@@ -83,6 +83,18 @@ print(liczby)
 #
 # print(type(pusty_string))
 
+#mozna zagniezdzac
+# a = 1
+# b = 3
+#
+# if a == 1:
+#     print('jestem w a')
+#     if b == 2:
+#         print('jestem w B')
+#     else:
+#         print('to jest inna cyfra niz 2')
+# else:
+#     print('to jest inna cyfra nzi 1')
 
 slownik = {'imie': 'Marek', 'nazwisko': 'Kowalski', 'plec': 'Mezczyzna'}
 
