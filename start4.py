@@ -2,7 +2,7 @@
 # from pliki_z_kodem import rzutowanie
 # import pyfiglet
 # import random
-from pliki_z_kodem.pojazd import Pojazd, FordMustang
+#from pliki_z_kodem.pojazd import Pojazd, FordMustang
 
 if __name__ == "__main__":  # zeby uruchomic tylko to, co jest w mainie a nie wszxystjkoe, co jest za zaimportowane
     print('Witaj w moim programie')
@@ -12,17 +12,24 @@ if __name__ == "__main__":  # zeby uruchomic tylko to, co jest w mainie a nie ws
     #print('kajak'.find('jak'))
 
 
-    pojazd1 = Pojazd('czerwony', 'BMW')
-    pojazd1.jedz()
-    pojazd1.hamuj()
+    # pojazd1 = Pojazd('czerwony', 'BMW')
+    # pojazd1.jedz()
+    # pojazd1.hamuj()
+    #
+    # pojazd2 = Pojazd('niebieski', 'audi')
+    # pojazd2.jedz()
+    #
+    # pojazd3 = FordMustang('czarny', 'ford')
+    # pojazd3.jedz()
+    # pojazd3.hamuj()
+    # pojazd2.hamuj()
+    #
+    # print(pojazd3.sygnal)
+    # input('Wcisnij ENTER aby zakonczyc...')
 
-    pojazd2 = Pojazd('niebieski', 'audi')
-    pojazd2.jedz()
+    a = input('Wpisz tekst')
+    if a.find('!') >= 0 or a.find('@') >=0:
+        print ('Znalazlem znak')
+    else:
+        print('Brak znakow spec')
 
-    pojazd3 = FordMustang('czarny', 'ford')
-    pojazd3.jedz()
-    pojazd3.hamuj()
-    pojazd2.hamuj()
-
-    print(pojazd3.sygnal)
-    input('Wcisnij ENTER aby zakonczyc...')
