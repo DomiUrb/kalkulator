@@ -1,0 +1,4 @@
+# tu podajemy biblioteki niezbedne do dzialania programu
+instalacja wymagan:
+cmd w terminalu
+pip install -r wymagania.txt
