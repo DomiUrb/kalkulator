@@ -29,9 +29,24 @@ a - zapis z zachowaniem poprzednich tresci w pliku
 #         uchwyt.close()
 #         break
 
-try:
-    with open('plik.txt', 'r', encoding='utf-8') as plik:
-        for linia in plik:
-            print(linia, end = '')
-except IOError: #input/output error
-    print('Brak pliku albo zla nazwa')
+# try: # do obsługi wyjątkoów
+#     with open('plik.txt', 'r', encoding='utf-8') as plik:
+#         for linia in plik:
+#             print(linia, end = '')
+# except IOError: #input/output error
+#     print('Brak pliku albo zla nazwa')
+
+
+try: # do obsługi wyjątkoów
+    plik = open('plik.txt', 'w', encoding='utf-8')
+    try:
+        plik.write ('Test obslugi pliku')
+    finally: # czyszczenei, sprzatanie po kawalku kodu, zawsze sie wykonuje
+        print('Zamykam plik')
+        plik.close
+# except IOError: #input/output error
+#     print('Brak pliku albo zla nazwa')
+except ValueError:
+    print('Zła nazwa %s pliku')
+
+raise NameError ('zła nazwa pliku') #wymuszanie pojawienei się wyjątku
