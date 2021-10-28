@@ -2,7 +2,7 @@
 # Założenia:
 # - program musi składać się z FUNKCJI
 # - wita nas banerem (pyfiglet)
-# - musi być zbudowana w pakiecie, w którym znajdzie się "silnik" kalkulatora
+# - musi być zbudowana w pakiecie, w którym znajdzie się "__silnik" kalkulatora
 # - menu musi być uruchamiane w pliku START.PY
 # - kalkulator musi obsługiwać: +, -, *, /, **
 # - użytkownik musi być informowany o tym, co się obecnie dzieje (wynik, wybór działania....)

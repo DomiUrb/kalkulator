@@ -2,18 +2,17 @@
 # from pliki_z_kodem import rzutowanie
 # import pyfiglet
 # import random
-#from pliki_z_kodem.pojazd import Pojazd, FordMustang
-#from pliki_z_kodem.human import Czlowiek
-from pliki_z_kodem.ptak import Ptak, Orzel, Pingwin
-
+# from pliki_z_kodem.pojazd import Pojazd, FordMustang
+# from pliki_z_kodem.human import Czlowiek
+#from pliki_z_kodem.ptak import * #Ptak, Orzel, Pingwin
+from pliki_z_kodem.samochod import Samochod
 
 if __name__ == "__main__":  # zeby uruchomic tylko to, co jest w mainie a nie wszxystjkoe, co jest za zaimportowane
     print('Witaj w moim programie')
     # pakiet.witaj()
-    #print(10 != 'tekst' and 12 > 3)
-    #print(random.randint(1,3)<5 and random.randint(1,10)==11)
-    #print('kajak'.find('jak'))
-
+    # print(10 != 'tekst' and 12 > 3)
+    # print(random.randint(1,3)<5 and random.randint(1,10)==11)
+    # print('kajak'.find('jak'))
 
     # pojazd1 = Pojazd('czerwony', 'BMW')
     # pojazd1.jedz()
@@ -42,9 +41,33 @@ if __name__ == "__main__":  # zeby uruchomic tylko to, co jest w mainie a nie ws
 # ludzik1 = Czlowiek('Domi', 'k', 25) # dla klasy bez konstruktora trzeba definiowac osobno argumenty:
 # ludzik1.przywitaj()
 
-o=Orzel('Orzeł', 80)
-p=Pingwin('Pingwin', 30)
+# o = Orzel('Orzeł', 80)
+# p = Pingwin('Pingwin', 30)
+#
+# o.lec()
+# p.lec()
+# o.poluj()
+# p.slizgaj()
 
-o.lec()
-p.lec()
-o.poluj()
+
+# o = Orzel( 80)
+# p = Pingwin(30)
+#
+# o.lec()
+# p.lec()
+# o.poluj()
+# p.slizgaj()
+# p.wydajOdglos()
+# o.wydajOdglos()
+
+    bmw = Samochod()
+    bmw.uruchom()
+    bmw.przyspiesz()
+    bmw.przyspiesz()
+    bmw.przyspiesz()
+    bmw.hamuj()
+    bmw.hamuj()
+    bmw.hamuj()
+    bmw.wylacz()
+    #print(bmw.__silnik)
+
